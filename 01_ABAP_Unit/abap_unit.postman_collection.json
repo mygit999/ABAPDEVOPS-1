@@ -55,12 +55,12 @@
 					"raw": "{\n\t\n}"
 				},
 				"url": {
-					"raw": "{{protocol}}://{{host}}:{{port}}/sap/bc/adt/abapunit?sap-client={{client}}&sap-language=EN",
-					"protocol": "{{protocol}}",
+					"raw": "http://in-blr-1709.corp.capgemini.com:8000/sap/bc/adt/abapunit?sap-client=600&sap-language=EN",
+					"protocol": "http",
 					"host": [
-						"{{host}}"
+						"in-blr-1709.corp.capgemini.com"
 					],
-					"port": "{{port}}",
+					"port": "8000",
 					"path": [
 						"sap",
 						"bc",
@@ -70,7 +70,7 @@
 					"query": [
 						{
 							"key": "sap-client",
-							"value": "{{client}}",
+							"value": "600",
 							"equals": true
 						},
 						{
@@ -182,12 +182,12 @@
 					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<aunit:runConfiguration xmlns:aunit=\"http://www.sap.com/adt/aunit\">\r\n\t<external>\r\n\t\t<coverage active=\"false\"/>\r\n\t</external>\r\n\t<adtcore:objectSets xmlns:adtcore=\"http://www.sap.com/adt/core\">\r\n\t\t<objectSet kind=\"inclusive\">\r\n\t\t\t<adtcore:objectReferences>\r\n\t\t\t\t<adtcore:objectReference adtcore:uri=\"/sap/bc/adt/vit/wb/object_type/devck/object_name/{{package}}\"/>\r\n\t\t\t</adtcore:objectReferences>\r\n\t\t</objectSet>\r\n\t</adtcore:objectSets>\r\n</aunit:runConfiguration>"
 				},
 				"url": {
-					"raw": "{{protocol}}://{{host}}:{{port}}/sap/bc/adt/abapunit/testruns?sap-client={{client}}&sap-language=EN",
-					"protocol": "{{protocol}}",
+					"raw": "http://in-blr-1709.corp.capgemini.com:8000/sap/bc/adt/abapunit/testruns?sap-client=600&sap-language=EN",
+					"protocol": "http",
 					"host": [
-						"{{host}}"
+						"in-blr-1709.corp.capgemini.com"
 					],
-					"port": "{{port}}",
+					"port": "8000",
 					"path": [
 						"sap",
 						"bc",
@@ -198,7 +198,7 @@
 					"query": [
 						{
 							"key": "sap-client",
-							"value": "{{client}}",
+							"value": "600",
 							"equals": true
 						},
 						{
@@ -217,12 +217,12 @@
 		"basic": [
 			{
 				"key": "username",
-				"value": "{{username}}",
+				"value": "DEV_ECQ2",
 				"type": "string"
 			},
 			{
 				"key": "password",
-				"value": "{{password}}",
+				"value": "Init@1234",
 				"type": "string"
 			},
 			{
