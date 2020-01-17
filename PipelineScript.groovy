@@ -21,7 +21,7 @@ pipeline {
          }
         stage('ATC Checks'){
               parallel{
-                    stage('ATC Checks HANA Readiness - FUNCTIONAL_DB'){
+                    stage('ATC Checks HANA Readiness - DEFAULT'){
                         steps{
                             withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'ID OF YOUR CREDENTIALS', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
                             sh ''' 
