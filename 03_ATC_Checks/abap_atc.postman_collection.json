@@ -57,12 +57,12 @@
 					"raw": "{\n\t\n}"
 				},
 				"url": {
-					"raw": "{{protocol}}://{{host}}:{{port}}/sap/bc/adt/atc/worklists?sap-client={{client}}&sap-language=EN",
-					"protocol": "{{protocol}}",
+					"raw": "http://in-blr-1709.corp.capgemini.com:8000/sap/bc/adt/atc/worklists?sap-client=600&sap-language=EN",
+					"protocol": "http}",
 					"host": [
-						"{{host}}"
+						"in-blr-1709.corp.capgemini.com"
 					],
-					"port": "{{port}}",
+					"port": "8000",
 					"path": [
 						"sap",
 						"bc",
@@ -73,7 +73,7 @@
 					"query": [
 						{
 							"key": "sap-client",
-							"value": "{{client}}",
+							"value": "600",
 							"equals": true
 						},
 						{
@@ -120,12 +120,12 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{protocol}}://{{host}}:{{port}}/sap/bc/adt/atc/worklists?checkVariant={{atc_variant}}&sap-client={{client}}&sap-language=EN",
-					"protocol": "{{protocol}}",
+					"raw": "http://in-blr-1709.corp.capgemini.com:8000/sap/bc/adt/atc/worklists?checkVariant=DEFAULT&sap-client=600&sap-language=EN",
+					"protocol": "http",
 					"host": [
-						"{{host}}"
+						"in-blr-1709.corp.capgemini.com"
 					],
-					"port": "{{port}}",
+					"port": "8000",
 					"path": [
 						"sap",
 						"bc",
@@ -136,12 +136,12 @@
 					"query": [
 						{
 							"key": "checkVariant",
-							"value": "{{atc_variant}}",
+							"value": "DEFAULT",
 							"equals": true
 						},
 						{
 							"key": "sap-client",
-							"value": "{{client}}",
+							"value": "600",
 							"equals": true
 						},
 						{
@@ -234,15 +234,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<atc:run xmlns:atc=\"http://www.sap.com/adt/atc\" maximumVerdicts=\"100\">\r\n  <objectSets xmlns:adtcore=\"http://www.sap.com/adt/core\">\r\n    <objectSet kind=\"inclusive\">\r\n      <adtcore:objectReferences>\r\n        <adtcore:objectReference adtcore:uri=\"/sap/bc/adt/vit/wb/object_type/devck/object_name/{{package}}\"/>\r\n      </adtcore:objectReferences>\r\n    </objectSet>\r\n  </objectSets>\r\n</atc:run>\r\n"
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<atc:run xmlns:atc=\"http://www.sap.com/adt/atc\" maximumVerdicts=\"100\">\r\n  <objectSets xmlns:adtcore=\"http://www.sap.com/adt/core\">\r\n    <objectSet kind=\"inclusive\">\r\n      <adtcore:objectReferences>\r\n        <adtcore:objectReference adtcore:uri=\"/sap/bc/adt/vit/wb/object_type/devck/object_name/ZDEVOPS\"/>\r\n      </adtcore:objectReferences>\r\n    </objectSet>\r\n  </objectSets>\r\n</atc:run>\r\n"
 				},
 				"url": {
-					"raw": "{{protocol}}://{{host}}:{{port}}/sap/bc/adt/atc/runs?worklistId={{worklist_id}}&sap-client={{client}}&sap-language=EN",
-					"protocol": "{{protocol}}",
+					"raw": "http://in-blr-1709.corp.capgemini.com:8000/sap/bc/adt/atc/runs?worklistId={{worklist_id}}&sap-client=600&sap-language=EN",
+					"protocol": "http",
 					"host": [
-						"{{host}}"
+						"in-blr-1709.corp.capgemini.com"
 					],
-					"port": "{{port}}",
+					"port": "8000",
 					"path": [
 						"sap",
 						"bc",
@@ -258,7 +258,7 @@
 						},
 						{
 							"key": "sap-client",
-							"value": "{{client}}",
+							"value": "600",
 							"equals": true
 						},
 						{
@@ -330,12 +330,12 @@
 				],
 				"body": {},
 				"url": {
-					"raw": "{{protocol}}://{{host}}:{{port}}/sap/bc/adt/atc/worklists/{{worklist_id}}?includeExemptedFindings=false&sap-client={{client}}&sap-language=EN",
-					"protocol": "{{protocol}}",
+					"raw": "http://in-blr-1709.corp.capgemini.com:8000/sap/bc/adt/atc/worklists/{{worklist_id}}?includeExemptedFindings=false&sap-client=600&sap-language=EN",
+					"protocol": "http",
 					"host": [
-						"{{host}}"
+						"in-blr-1709.corp.capgemini.com"
 					],
-					"port": "{{port}}",
+					"port": "8000",
 					"path": [
 						"sap",
 						"bc",
@@ -352,7 +352,7 @@
 						},
 						{
 							"key": "sap-client",
-							"value": "{{client}}",
+							"value": "600,
 							"equals": true
 						},
 						{
@@ -371,12 +371,12 @@
 		"basic": [
 			{
 				"key": "password",
-				"value": "{{password}}",
+				"value": "Init@1234",
 				"type": "string"
 			},
 			{
 				"key": "username",
-				"value": "{{username}}",
+				"value": "DEV_ECQ2",
 				"type": "string"
 			},
 			{
