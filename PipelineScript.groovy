@@ -5,7 +5,7 @@ pipeline {
                steps{
                      withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'ID OF YOUR CREDENTIALS', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
                      sh '''
-                     newman run https://github.com/himanshush13/ABAPDEVOPS/master/01_ABAP_Unit/abap_unit.postman_collection.json -k --bail --environment https://github.com/himanshush13/ABAPDEVOPS/master/01_ABAP_Unit/abap_unit.postman_environment.json -k --timeout-request 120000 --global-var "username=$USERNAME" --global-var "password=$PASSWORD" --global-var "package=zdevops" 
+                     newman run https://github.com/himanshush13/ABAPDEVOPS.git/master/01_ABAP_Unit/abap_unit.postman_collection.json -k --bail --environment https://github.com/himanshush13/ABAPDEVOPS/master/01_ABAP_Unit/abap_unit.postman_environment.json -k --timeout-request 120000 --global-var "username=$USERNAME" --global-var "password=$PASSWORD" --global-var "package=zdevops" 
                      '''
                      }
                 }
